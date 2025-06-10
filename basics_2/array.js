@@ -5,9 +5,9 @@ const myArry = [0, 1, 2, 3, 4, 5];// this is array and 0, 1, 2, 3 are elements o
 const newArr = new Array(1, 2, 3, 4 )// here in this way we doesnot used [] boxes for array decclaration
 // console.log(newArr [2]);
 
-//Array methods
+//***********************  ARRAY METHODS *****************************
 
-// myArry.push(8); //this push methods actually add element to the array
+// myArry.push(8); //this push methods actually add element to the array at the end of the array
 // console.log(myArry);
 
 // myArry.pop(); //in this POP method its work is remove last element from the array 
@@ -37,7 +37,7 @@ const newArr = new Array(1, 2, 3, 4 )// here in this way we doesnot used [] boxe
 
 
 
-//Slice and Splice
+//*********************  Slice and Splice ************************
 
 // console.log("A", myArry);
 
@@ -53,6 +53,72 @@ const newArr = new Array(1, 2, 3, 4 )// here in this way we doesnot used [] boxe
 
 
 
+
+const actor = ["SRK", "SK", "AK", "RR", "NTR"]
+let actress = ["Rani", "Karina", "Priyanka", "Katrina", "Preety"];
+
+
+//*****************************     PUSH   *************************** 
+
+// actor.push(actress)
+// console.log(actor)
+// console.log(actor[5][3]) 
+
+//Push gare vane exitsting array mai add voi dincha new array create hunna
+
+
+
+//*************************       CONCAT    **************************
+// let actressAll  = actress.concat(actor);
+// console.log(actressAll)
+// console.log(actress)
+
+//concat method le New Array RETURN garcha, main array lai kei ni garedna 
+
+
+
+// **********************      SPREAD OPERATOR  *******************************
+// const allActress = [...actor, ...actress]
+// console.log(allActress)
+
+// DUITA ARRAY LAI MERGE GRANI BELA SPREAD OPERATOR USE GAREKO RAMRO HUNCHA INSTEAD OF PUSH METHOD AND CONCAT METHOD
+//ALTHOGH USE GARNCHA push AND concat BUT MOSTLY CODE HORU MA SPREAD OPERATOR USE HUNCHA 
+
+
+
+// ************************* FLAT ******************************
+
+const realNum = [1, 2, 3, [4, 5], 9, 6, 7, [8,[33, 43, 55]]]
+// console.log(realNum.flat(3))
+
+const realsNum = realNum.flat(Infinity)
+// console.log(realsNum)
+// console.log(realsNum)
+
+// ARRAY KO VITRO ARRAY CHA VANE ANI TESLAI SINGLE ARRAY CONVERT GARNI HO VANE WE CAN USED FLAT METHOD
+
+
+//************************  ISARRAY  ********************************
+
+//isarray means asking question 
+
+// console.log(Array.isArray(actor));
+// console.log(Array.isArray('Anjan'))
+
+// ********************* FROM ******************************
+// console.log(Array.from('Anjan')) //form le convert gareko cha string lai array ma 
+
+
+
+let name = "Shankar Dev Vidya Niketan"
+
+// console.log(Array.isArray(name))
+// console.log(Array.from(name))
+
+let nam = Array.from(name)
+console.log(nam);
+
+console.log(Array.isArray(nam))
 
 
 
