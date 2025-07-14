@@ -62,7 +62,7 @@ let actress = ["Rani", "Karina", "Priyanka", "Katrina", "Preety"];
 
 // actor.push(actress)
 // console.log(actor)
-// console.log(actor[5][3]) 
+// console.log(actor[5][2]) 
 
 //Push gare vane exitsting array mai add voi dincha new array create hunna
 
@@ -88,11 +88,14 @@ let actress = ["Rani", "Karina", "Priyanka", "Katrina", "Preety"];
 
 // ************************* FLAT ******************************
 
-const realNum = [1, 2, 3, [4, 5], 9, 6, 7, [8,[33, 43, 55]]]
-// console.log(realNum.flat(3))
+const realNum = [1, 2, 3, [4, 5], 9, 6, 7, [8,[33,43,55],],[4,48,[99]]]
+
+
+
+const realDnum = realNum.flat(1);
+console.log(realDnum); 
 
 const realsNum = realNum.flat(Infinity)
-// console.log(realsNum)
 // console.log(realsNum)
 
 // ARRAY KO VITRO ARRAY CHA VANE ANI TESLAI SINGLE ARRAY CONVERT GARNI HO VANE WE CAN USED FLAT METHOD
@@ -116,9 +119,9 @@ let name = "Shankar Dev Vidya Niketan"
 // console.log(Array.from(name))
 
 let nam = Array.from(name)
-console.log(nam);
+// console.log(nam);
 
-console.log(Array.isArray(nam))
+// console.log(Array.isArray(nam))
 
 
 
