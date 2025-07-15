@@ -102,7 +102,32 @@ const obj3 = Object.assign({}, obj1, obj2) //here, the empthy {} is target which
 //Using SPREAD Operator
 
 const obj5 = {...obj, ...obj1, ...obj2} // Most of the time using this way to Merge two OBJECT
-console.log(obj5)
+//console.log(obj5)
+
+ 
+
+//++++++++++++++++++ D Structring of OBJ +++++++++++++++
+
+
+const school ={
+    schoolName: "SVN",
+    location: "Dibrugarh",
+    principle: "Ch. Chakrawarty"
+}
+
+// console.log(school.location);
+
+//for purpose of clean code And also if any key values needs multiple time using for output
+//SO that time we actually using D structring of OBJ
+
+//how to do that
+
+const {schoolName : name} = school // = school is which OBJ using and inside the brases which need to be displaying multiple time 
+
+//Also : name just chnaged the key 
+
+// console.log(schoolName)
+console.log(name)
 
 
 
