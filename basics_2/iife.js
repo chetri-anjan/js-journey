@@ -1,9 +1,9 @@
 // IMMEDIATELY INVOKED FUNCTION EXPRESSION (IIFE)
 
-// Function create gareko immediately nai execute garni bela 
+// Function create gareko immediately nai execute gareko lai IIFE vancha  
 
 //Global Scope le polution create garcha function horu ma some time, 
-// ani atleast yo function ma polute nahaus vanera iife Used garincha
+// ani atleast yo function ma pollute nahaus vanera iife Used garincha
 
 // OR global scope ko variable or junsukai declaration cha global scope ma
 // tesko pollution lai remove garna lai IIFE use garincha
