@@ -126,14 +126,56 @@ coding.forEach( function (value) {
 // normal function but name hunna only FUNCTION key word huncha ani tyo parameter lai ke vanni ho j nam rakhe ni huncha
 
 
+// FOR EACH le only value or item whatever we call it, not only take as parameter it take more than that, like 
+// item , index, array itself. So, example
+
+coding.forEach( (items, index, arr)=>{
+    console.log(items, index, arr);
+    
+})
+
+
+
+
+
 function printme (item){
-    console.log(item)
+    // console.log(item)
 }
 
-// Function lai pani as a parameter pass garna sakincha FOR EACH ma. function nalekhikinai kunai arkoi tham ma vako FN lai ni
-// as peramete way ma pass gara sakincha for each ma
+// Function lai pani as a parameter pass garna sakincha FOR EACH ma. 
+// function nalekhikinai kunai arkoi tham ma vako FN lai ni as peramete way ma pass gara sakincha for each ma
+
+// function lai execute () garni haina just reference (just fn ko nam halni ho) lini ho yesta way ma data fetch garni bela. 
 
 coding.forEach( printme)
+
+
+
+const programing = [
+    {
+        ProgramingLanguage: "Hypertext Preprocessor",
+        languageFileName:"php" 
+    },
+
+    {
+        ProgramingLanguage: "Javascript",
+        languageFileName:"js"
+    },
+
+    {
+        ProgramingLanguage: "python",
+        languageFileName:"py" 
+    }
+]
+
+
+programing.forEach( (value) => {
+    // console.log(value.ProgramingLanguage);    
+}
+
+)
+
+
 
 
 
